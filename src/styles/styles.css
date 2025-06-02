@@ -1,0 +1,71 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: rgb(48 59 118);
+}
+
+h1,h2 {
+  color: rgb(233 207 96);
+}
+
+div { 
+  padding: 10px;
+}
+
+#root, #unsorted, #sorted, #share-section, #share-text {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+#share-section {
+  background-color: rgb(141 176 209);
+  border-radius: 8px;
+}
+
+#emoji-input {
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+}
+
+#emoji-input input {
+  width: 200px;
+  text-align: center;
+  border-radius: 0px;
+  border: 1px solid 
+}
+
+#emoji-input button {
+  aspect-ratio: 1 / 1;
+  border-radius: 0px;
+  border: 1px solid 
+}
+
+#sorted-emoji, #emoji-input button, #emoji-input input {
+  font-size: 1.75rem;
+}
+
+#share-text {
+  text-align: center;
+}
+
+.info {
+  color: rgba(234, 238, 254, 50%);
+  font-style: italic;
+}
+
